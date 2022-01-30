@@ -1,7 +1,7 @@
 
 <template>
   <div class="login">
-    <img class="login__logo" alt="Vue logo" src="./../assets/sibdev-logo.png" />
+    <img class="login__logo" alt="Vue logo" src="./../assets/login-sibdev-logo.png" />
 
     <h3 class="login__title">Вход</h3>
 
@@ -98,6 +98,7 @@ export default class Login extends Vue {
     height: 520px
     background: #fff
     border: 1px solid rgba(39, 39, 39, 0.1)
+    border-radius: 5px
 
     &__logo
         margin-top: 40px
@@ -155,6 +156,7 @@ export default class Login extends Vue {
     &__label
         color: rgba(23, 23, 25, 0.3)
         font-size: 16px
+        margin-bottom: 5px
 
     &__button
         margin-top: 20px

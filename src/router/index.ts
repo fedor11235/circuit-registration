@@ -7,8 +7,22 @@ Vue.use(VueRouter)
 export const constantRoutes: RouteConfig[] = [
     {
       path: '/login', 
-      component: () => import(/* webpackChunkName: "login" */ '@/components/Login.vue'), //src\components\Login.vue
-      meta: { hidden: true }
+      component: () => import(/* webpackChunkName: "login" */ '@/components/Login.vue'), 
+    },
+    {
+      path: '/schemes', 
+      component: () => import(/* webpackChunkName: "schemes" */ '@/components/Schemes.vue'), 
+      // children: [
+      //   {
+      //     path: 'my-schemes',
+      //     component: () => import(/* webpackChunkName: "schemes" */ '@/components/Schemes.vue'), 
+      //   },
+      // ],
+    },
+
+    {
+      path: '/create-schemes', 
+      component: () => import(/* webpackChunkName: "create-schemes" */ '@/components/CreateSchemes.vue'), 
     },
 ]
 
@@ -21,7 +35,7 @@ const createRouter = () => new VueRouter({
         return { x: 0, y: 0 }
       }
     },
-    // base: process.env.BASE_URL,
+    // base: '/login',
     routes: constantRoutes
   })
 

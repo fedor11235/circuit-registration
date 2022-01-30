@@ -1,28 +1,27 @@
 <template>
   <div id="app">
-    <Login/>
+    <router-view />
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import Login from './components/Login.vue';
+import { Vue } from 'vue-property-decorator'
+// import Login from '@/components/Login.vue'
+// import Schemes from '@/components/Schemes.vue'
 
-@Component({
-  components: {
-    Login,
-  },
-})
 export default class App extends Vue {}
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+#app
+  font-family: 'Roboto', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-align: center
+
+body
+  margin: 0
+
+html
+  background-color: #FAFAFA
 </style>
