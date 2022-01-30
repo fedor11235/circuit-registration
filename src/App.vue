@@ -6,8 +6,6 @@
 
 <script lang="ts">
 import { Vue } from 'vue-property-decorator'
-// import Login from '@/components/Login.vue'
-// import Schemes from '@/components/Schemes.vue'
 
 export default class App extends Vue {}
 </script>

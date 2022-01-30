@@ -35,9 +35,8 @@
 </template>
 
 <script lang="ts">
-import { Component, Watch, Vue } from "vue-property-decorator";
+import { Watch, Vue } from "vue-property-decorator";
 
-@Component
 export default class Login extends Vue {
     viewPassword: boolean = true
     focused: boolean = false
